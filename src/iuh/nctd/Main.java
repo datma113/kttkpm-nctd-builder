@@ -12,6 +12,7 @@ public class Main {
                 .setGraphicsCardEnabled(true)
                 .build();
 
-        
+        System.out.println(computer);
+        System.out.println(computer1);
     }
 }
