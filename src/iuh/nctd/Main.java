@@ -14,5 +14,12 @@ public class Main {
 
         System.out.println(computer);
         System.out.println(computer1);
+
+        Student student = new Student.StudentBuilder(1 ,"nguyễn công Thành Đạt", "DHKTPM14", 21, true)
+                .setAddress("Vũng Tàu")
+                .setNationality("Việt Nam")
+                .setReligion("Rome Catholic")
+                .build();
+        System.out.println(student);
     }
 }

@@ -32,7 +32,15 @@ public class Computer {
         this.isGraphicsCardEnabled = builder.isGraphicsCardEnabled;
         this.isBluetoothEnabled = builder.isBluetoothEnabled;
     }
-
+    @Override
+    public String toString() {
+        return "ComputerBuilder{" +
+                "HDD='" + HDD + '\'' +
+                ", RAM='" + RAM + '\'' +
+                ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
+                ", isBluetoothEnabled=" + isBluetoothEnabled +
+                '}';
+    }
     public static class ComputerBuilder {
         // required parameters
         private String HDD;
@@ -46,8 +54,9 @@ public class Computer {
             this.RAM = ram;
         }
 
-        public ComputerBuilder setGraphicsCardEnabled(boolean
-                                                              isGraphicsCardEnabled) {
+
+
+        public ComputerBuilder setGraphicsCardEnabled(boolean isGraphicsCardEnabled) {
             this.isGraphicsCardEnabled = isGraphicsCardEnabled;
             return this;
         }
